@@ -33,7 +33,7 @@ document.getElementById("solveBtn").addEventListener("click", (e) => {
 
   const get24Proc = () => {
     axios
-      .post("http://localhost:8000/get24Proc", {
+      .post("https://node-js.herokuapp.com/get24Proc", {
         targetNum: "24",
         nums: nums,
       })
