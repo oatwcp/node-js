@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <form action="/get24" method="get">
+      <h1 style="text-align: center">Tic Tac Toe</h1>
+      <div>
+        <table>
+          <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+          </tr>
+        </table>
+        <div class="endgame">
+          <div class="text"></div>
+        </div>
+      </div>
+      <script src="js/tictactoe.js"></script>
+      <button type="button" onClick="startGame()">Replay</button>
+      <button type="submit">Game 24</button>
+    </form>
+  </body>
+</html>

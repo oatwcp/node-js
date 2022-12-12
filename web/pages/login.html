@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1" />
+    <title>NodeJS Learn</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyBs3W5cILFswGmTcQfX6ZZ94rK7BK6rtrw",
+        authDomain: "jenosize-assignment.firebaseapp.com",
+        projectId: "jenosize-assignment",
+        storageBucket: "jenosize-assignment.appspot.com",
+        messagingSenderId: "239139349394",
+        appId: "1:239139349394:web:91ff6e26997c42e417974b",
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css"
+    />
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@latest/webcomponents-loader.js"></script>
+    <script type="text/javascript">
+      var uiConfig = {
+        signInSuccessUrl: "/home",
+        signInOptions: [
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+        ],
+      };
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      ui.start("#firebaseui-auth-container", uiConfig);
+    </script>
+  </head>
+  <body>
+    <div class="login">
+      <h1>Login</h1>
+      <form action="/login" method="post">
+        <label for="username">
+          <i class="fas fa-user"></i>
+        </label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Username"
+          id="username"
+          required
+        />
+        <label for="password">
+          <i class="fas fa-lock"></i>
+        </label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          id="password"
+          required
+        />
+        <input type="submit" value="Login" />
+      </form>
+      <form action="/register" method="get">       
+        <input type="submit" value="Register" />
+      </form>
+      <div id="firebaseui-auth-container"></div>
+    </div>
+  </body>
+</html>

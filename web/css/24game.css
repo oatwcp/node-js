@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font: 1em/1.3 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 64em;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .btn {
+    display: inline-block;
+    border: .25em solid #90b7fe;
+    padding: .5em 1.5em;
+    background-color: #d6e4ff;
+    font-weight: bold;
+    border-radius: .175em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .btn:focus {
+    outline: transparent;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .summary {
+    text-align: center;
+    color: #444;
+  }
+  
+  .nums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5em;
+  }
+  
+  .num {
+    display: flex;
+    flex: 0 1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: -.0875em;
+  }
+  
+  .num-label {
+    display: block;
+    background-color: #f45959;
+    color: #fff;
+    font-weight: bold;
+    font-size: .75em;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    line-height: 1.6;
+    border-radius: 50%;
+    position: absolute;
+    left: .75em;
+  }
+  
+  .num-input {
+    width: 7.25em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgba(255,255,255,.4);
+    border: .175em solid #e7e7e7;
+    padding: 0 0 0 .75em;
+    color: #222;
+    border-radius: .75em;
+  }
+  
+  .num-input:focus {
+    outline: transparent;
+    border-color: #90b7fe;
+  }
+  
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #7c7c7c;
+  }
+  
+  .target-input {
+    width: 6em;
+    margin-right: -.5em;
+    margin-left: .5em;
+    background-color: #fff;
+    cursor: initial;
+    padding-left: .75em;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .solution {
+    text-align: center;
+    margin: .75em 1.25em;
+    padding: .5em 1em;
+    background-color: #f2f2f2;
+    font-size: 2.5em;
+    font-family: 'Lucida Console', monospace;
+    border-radius: .175em 0;
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="css/24game.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">24 Game</h3>
+      <div class="solution">
+        <span id="equation">&nbsp;</span>
+        <br />
+        <span id="result">&nbsp;</span>
+      </div>
+      <div class="nums">
+        <div class="num">
+          <label for="numA" class="num-label">1</label>
+          <input type="number" id="numA" class="num-input" value="" />
+        </div>
+        <div class="num">
+          <label for="numB" class="num-label">2</label>
+          <input type="number" id="numB" class="num-input" value="" />
+        </div>
+        <div class="num">
+          <label for="numC" class="num-label">3</label>
+          <input type="number" id="numC" class="num-input" value="" />
+        </div>
+        <div class="num">
+          <label for="numD" class="num-label">4</label>
+          <input type="number" id="numD" class="num-input" value="" />
+        </div>
+      </div>
+      <div class="action">
+        <input
+          id="target"
+          type="text"
+          class="btn target-input"
+          value="24"
+          disabled=""
+        />
+        <button type="button" id="solveBtn" class="btn">Go</button>
+      </div>
+    </div>
+    <script src="js/axios.min.js"></script>
+    <script src="js/get24.js"></script>
+  </body>
+</html>
